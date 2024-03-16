@@ -39,5 +39,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Obtén una referencia al botón
+        Button btnProfile = findViewById(R.id.btn_profile);
+
+        // Configura un OnClickListener para el botón
+        btnProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Define la lógica para navegar a la pantalla ActivityTable
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
